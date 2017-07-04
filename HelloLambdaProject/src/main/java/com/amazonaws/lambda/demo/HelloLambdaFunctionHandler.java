@@ -6,6 +6,7 @@ import com.amazonaws.services.lambda.runtime.RequestHandler;
 public class HelloLambdaFunctionHandler implements RequestHandler<Object, String> {
 
     @Override
+    // OTB handleRequest Method
     public String handleRequest(Object input, Context context) {
         context.getLogger().log("Input: " + input);
 
